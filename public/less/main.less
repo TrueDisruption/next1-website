@@ -1,0 +1,47 @@
+@green: #00EFC1;
+@dark-green: #008A6E;
+@bold: 700;
+@ultrabold: 900;
+@grey: #EBEBEB;
+@prime-blue: #008AE0;
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	max-width: 1224px;
+	// box-shadow: 0px -1px 1px 0px rgba(204,204,204,0.5);
+}
+
+.header {
+    padding-bottom: 1rem;
+    border-bottom: .05rem solid #ccc;
+    text-transform: uppercase;
+
+    .rightNav {
+    	padding-top: 20px;
+	
+	    a {
+	    	font-weight: @ultrabold;
+	    	font-size: 20px;
+		    color: black;
+
+		    &.active {
+		    	background-color: transparent !important;
+		    	color: @green !important;
+		    }
+	    }
+    }
+
+}
+
+.logo {
+	img {
+		width: 183px;
+		height: 66px;
+	}
+}
+
+@import 'welcome.less';
+@import 'button.less';

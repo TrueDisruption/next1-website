@@ -21,16 +21,21 @@ body {
     text-transform: uppercase;
 
     .rightNav {
-    	padding-top: 20px;
+    	padding-top: 16px;
 	
 	    a {
-	    	font-weight: @ultrabold;
-	    	font-size: 20px;
+	    	font-weight: 500;
+	    	font-size: 16px;
 		    color: black;
+		    text-transform: none;
 
 		    &.active {
 		    	background-color: transparent !important;
 		    	color: @green !important;
+		    }
+
+		    &:hover {
+		    	text-decoration: underline;
 		    }
 	    }
     }
@@ -39,7 +44,7 @@ body {
 
 .logo {
 	img {
-		width: 180px;
+		width: 150px;
 	}
 }
 
@@ -47,3 +52,4 @@ body {
 @import 'descriptionBlocks.less';
 @import 'button.less';
 @import 'reports.less';
+@import 'sections.less';

@@ -7,6 +7,10 @@ const bodyParser = require('body-parser');
 const index = require('./routes/index');
 const subscribe = require('./routes/subscribe');
 const iotreport = require('./routes/iotreport');
+const about = require('./routes/about');
+const consulting = require('./routes/consulting');
+const contact = require('./routes/contact');
+const login = require('./routes/login');
 const app = express();
 
 // view engine setup
@@ -22,8 +26,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/about', about);
 app.use('/subscribe', subscribe);
 app.use('/iot-report', iotreport);
+app.use('/ai-report', iotreport);
+app.use('/consulting', consulting);
+app.use('/contact', contact);
+app.use('/login', login);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

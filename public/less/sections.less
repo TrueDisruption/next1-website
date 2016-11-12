@@ -52,3 +52,137 @@
 	}
 
 }
+
+.faq {
+
+	margin-top: 3rem;
+	text-align: center;
+
+	h3 {
+		font-size: 3.75rem;
+	    font-weight: @bold;
+	}
+
+	.card {
+		border: none;
+	}
+
+	.card-block {
+		background: #f4faff;
+		-webkit-border-bottom-right-radius: 6px;
+		-webkit-border-bottom-left-radius: 6px;
+		-moz-border-radius-bottomright: 6px;
+		-moz-border-radius-bottomleft: 6px;
+		border-bottom-right-radius: 6px;
+		border-right: ;der-bottom-left-radius: 6px;
+		text-align: left;
+		padding: 30px;
+	}
+
+	.card-header {
+		padding: 30px;
+	    background: #f4faff;
+	    border-radius: 6px;
+	    -webkit-transition: background 150ms ease;
+	    transition: background 150ms ease;
+	    border: none;
+	    text-align: left;
+
+	    text-decoration: none;
+
+	    a {
+	    	color: #7b8994;
+    	    cursor: pointer;
+    	    display: block;
+    	    font-size: 16px;
+    	    font-weight: 400;
+    	    margin: 0;
+    	    padding: 0 50px 0 0;
+    	    position: relative;
+
+    	    &.collapsed {
+
+	    	    &::after {
+	    	    	width: 0;
+		    	    height: 0;
+		    	    border-style: solid;
+		    	    border-width: 0 5px 6px 5px;
+		    	    border-color: transparent transparent #007ee5 transparent;
+		    	    content: "";
+		    	    position: absolute;
+		    	    right: 0;
+		    	    top: 10px;
+		    	    -webkit-transition: all 200ms ease 0s;
+		    	    transition: all 200ms ease 0s;
+		    	    -webkit-transform: rotate(90deg);
+		    	    transform: rotate(90deg);
+		    	}
+    	    }
+
+
+	    	&::after {
+	    	    	width: 0;
+		    	    height: 0;
+		    	    border-style: solid;
+		    	    border-width: 0 5px 6px 5px;
+		    	    border-color: transparent transparent #007ee5 transparent;
+		    	    content: "";
+		    	    position: absolute;
+		    	    right: 0;
+		    	    top: 10px;
+		    	    -webkit-transition: all 200ms ease 0s;
+		    	    transition: all 200ms ease 0s;
+	    	    -webkit-transform: rotate(180deg);
+	    	    transform: rotate(180deg);
+	    	}
+    	}
+
+	    a:active,a:hover, a:visited, a:focus {
+		    text-decoration: none;
+	    }
+	}
+
+}
+
+.topics {
+	margin: 1px;
+	.item {
+		background-color: whitesmoke;
+		border:1px solid white;
+		padding: 1rem;
+		text-align: center;
+		height: 320px;
+
+		h4 {
+		}
+	}
+}
+
+.subscribe {
+
+	margin-top: 3rem;
+	text-align: center;
+
+	h3 {
+		font-size: 3.75rem;
+	    font-weight: @bold;
+	}
+
+}
+
+.about {
+	margin-top: 3rem;
+	text-align: center;
+
+	h1 {
+		font-size: 3.5rem;
+		font-weight: @ultrabold;
+	}
+
+	p {
+		margin-top: 3rem;
+		font-size: 24px;
+		font-weight: 300;
+		text-align: justify;
+	}
+}

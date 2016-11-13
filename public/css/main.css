@@ -10,7 +10,7 @@ body {
   text-transform: uppercase;
 }
 .header .rightNav {
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 .header .rightNav a {
   font-weight: 500;
@@ -25,8 +25,14 @@ body {
 .header .rightNav a:hover {
   text-decoration: underline;
 }
+.header .rightNav a:last-child {
+  padding-right: 0;
+}
+.logo {
+  padding-top: 1rem;
+}
 .logo img {
-  width: 150px;
+  width: 100px;
 }
 .welcome {
   margin-top: 3rem;
@@ -359,6 +365,13 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 3rem;
+}
+.contact h3 {
+  margin-top: 3rem;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: 3rem;
 }
 .contact #contactForm input:not([type]),
 .contact #contactForm input[type=color],

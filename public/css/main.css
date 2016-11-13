@@ -206,12 +206,12 @@ body {
 .iotReport.ai:hover {
   background-color: #00efc1;
 }
-.intro {
+.box {
   text-align: left;
   border: 1px solid #ccc;
   padding: 1rem;
 }
-.intro .title {
+.box .title {
   font-size: 24px;
   font-weight: 900;
 }
@@ -368,19 +368,13 @@ body {
   font-weight: 700;
   margin-bottom: 3rem;
 }
-.about {
+.general {
   padding-top: 5rem;
   margin-top: 3rem;
-  text-align: center;
+  text-align: left;
 }
-.about h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
-}
-.about p {
+.general p {
   margin-top: 3rem;
-  font-size: 24px;
-  font-weight: 300;
   text-align: justify;
 }
 .contact {

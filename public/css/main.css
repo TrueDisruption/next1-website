@@ -113,8 +113,8 @@ body {
 }
 .blueDescriptionBlock .close {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 1px;
+  top: -4px;
   padding: 0.2rem;
 }
 .blueDescriptionBlock .close i {
@@ -146,11 +146,20 @@ body {
 .roundBtn.green.hover {
   background-color: rgba(19, 206, 137, 0.7) !important;
 }
+.roundBtn.darkgreen {
+  background-color: #00a568;
+}
+.roundBtn.darkgreen:hover {
+  background-color: rgba(0, 165, 104, 0.7) !important;
+}
+.roundBtn.darkgreen.hover {
+  background-color: rgba(0, 165, 104, 0.7) !important;
+}
 .roundBtn.large {
   padding: 1.0rem 6rem;
 }
 .iotReport {
-  width: 465px;
+  width: 395px;
   background-color: #ebebeb;
   padding: 10px;
   margin: 0 auto;
@@ -347,6 +356,48 @@ body {
   font-size: 24px;
   font-weight: 300;
   text-align: justify;
+}
+.contact {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.contact #contactForm input:not([type]),
+.contact #contactForm input[type=color],
+.contact #contactForm input[type=date],
+.contact #contactForm input[type=datetime-local],
+.contact #contactForm input[type=datetime],
+.contact #contactForm input[type=email],
+.contact #contactForm input[type=month],
+.contact #contactForm input[type=number],
+.contact #contactForm input[type=password],
+.contact #contactForm input[type=search],
+.contact #contactForm input[type=tel],
+.contact #contactForm input[type=text],
+.contact #contactForm input[type=time],
+.contact #contactForm input[type=url],
+.contact #contactForm input[type=week],
+.contact #contactForm select,
+.contact #contactForm textarea {
+  position: relative;
+  padding: 0 16px;
+  max-width: 100%;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  background: #fff;
+  color: #333;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.contact #contactForm textarea {
+  overflow: auto;
+  padding: 16px;
+  min-height: 48px;
+  height: auto;
+  vertical-align: top;
+  resize: vertical;
+  resize: none;
 }
 .login img {
   height: 75px;

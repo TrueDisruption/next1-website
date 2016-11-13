@@ -15,16 +15,84 @@
     <div class="container">
       <%- include partials/navigation.ejs %>
 
-      <section class="about">
-
-        <h1>Contact</h1>
-
+      <section class="contact">
         <div class="row">
-          <div class="col-md-12">
-            <p>Next1 is indie consulting company founded by leading experts in the field of IoT, AI and VR. Our vision is to interact with leading experts on the IoT industry and produce the most high quality reports.</p>
-          </div>
-        </div>
-        
+
+            <div class="col-md-8">
+
+              <h1>We’d love to hear from you</h1>
+              <h3>Please submit your information and a Next1 representative will get in touch with you</h3>
+
+                <form id="contactForm" role="form" novalidate="true">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="First Name" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Last Name" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Phone Number">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Company Name" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Job Title">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group has-error has-danger">
+                                    <textarea id="form_message" name="message" class="form-control" rows="5" required="required" data-error="Please,leave us a message."></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="btn btn-lg btn-primary btn-block roundBtn blue" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div><!-- /.8 -->
+
+            <div class="col-md-4">
+              <h1>Our office</h1>
+            </div>
+
+        </div> <!-- /.row-->
+
       </section>
 
     </div>

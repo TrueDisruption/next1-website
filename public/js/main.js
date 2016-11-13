@@ -1,5 +1,3 @@
-console.log('k');
-
 $('.roundBtn.blue').hover(function(){
 	$(".reportHolder.iot").addClass('iothover');
 }, function(){

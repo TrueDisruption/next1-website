@@ -242,6 +242,25 @@ body {
 }
 .faq .card {
   border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.faq .card.collapsed a:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 6px 5px;
+  border-color: transparent transparent #373a3c transparent;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  -webkit-transition: all 200ms ease 0s;
+  transition: all 200ms ease 0s;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .faq .card-block {
   background: whitesmoke;
@@ -270,21 +289,6 @@ body {
   margin: 0;
   padding: 0 50px 0 0;
   position: relative;
-}
-.faq .card-header a.collapsed::after {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 5px 6px 5px;
-  border-color: transparent transparent #373a3c transparent;
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 10px;
-  -webkit-transition: all 200ms ease 0s;
-  transition: all 200ms ease 0s;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
 }
 .faq .card-header a::after {
   width: 0;
@@ -343,4 +347,70 @@ body {
   font-size: 24px;
   font-weight: 300;
   text-align: justify;
+}
+.login img {
+  height: 75px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 15px;
+  margin: 0 auto 30px;
+}
+.login .vertical-form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 40px;
+  border-radius: 3px;
+  background: white;
+  border: 1px solid #ccc;
+}
+.login .vertical-form .form-signin-heading {
+  text-align: center;
+  font-weight: 300;
+  color: #565656;
+  margin: 0 auto 45px;
+  font-size: 35px;
+  line-height: 38px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.login .vertical-form input[type='text'],
+.login .vertical-form input[type='email'],
+.login .vertical-form input[type='password'],
+.login .vertical-form input[type='number'],
+.login .vertical-form input[type='submit'] {
+  background: #fcfcfc;
+  border: 2px solid #e7e7e7;
+  margin: 20px auto;
+  padding: 15px;
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: opacity 0.4s;
+  text-align: left;
+  height: auto;
+  -webkit-appearance: none;
+}
+.login .vertical-form p {
+  text-align: center;
+}
+.login .vertical-form .forgot {
+  text-decoration: none;
+  border-bottom: 1px solid #bbb;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  color: #999;
+}
+.login .footer {
+  text-align: center;
+  margin: 20px auto;
+}
+.login .footer a {
+  font-weight: 600;
+  color: #373a3c;
+  text-decoration: underline;
+  border: 0;
+  padding: 0;
 }

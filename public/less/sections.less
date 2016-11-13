@@ -72,6 +72,32 @@
 
 	.card {
 		border: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none; 
+		// -webkit-box-shadow: 0px 0px 6px 0px rgba(235,235,235,1);
+		// -moz-box-shadow: 0px 0px 6px 0px rgba(235,235,235,1);
+		// box-shadow: 0px 0px 6px 0px rgba(235,235,235,1);
+
+	    &.collapsed {
+
+    	    a:after {
+    	    	width: 0;
+	    	    height: 0;
+	    	    border-style: solid;
+	    	    border-width: 0 5px 6px 5px;
+	    	    border-color: transparent transparent #373a3c transparent;
+	    	    content: "";
+	    	    position: absolute;
+	    	    right: 0;
+	    	    top: 10px;
+	    	    -webkit-transition: all 200ms ease 0s;
+	    	    transition: all 200ms ease 0s;
+	    	    -webkit-transform: rotate(90deg);
+	    	    transform: rotate(90deg);
+	    	}
+	    }
 
 	}
 
@@ -104,24 +130,7 @@
     	    padding: 0 50px 0 0;
     	    position: relative;
 
-    	    &.collapsed {
 
-	    	    &::after {
-	    	    	width: 0;
-		    	    height: 0;
-		    	    border-style: solid;
-		    	    border-width: 0 5px 6px 5px;
-		    	    border-color: transparent transparent #373a3c transparent;
-		    	    content: "";
-		    	    position: absolute;
-		    	    right: 0;
-		    	    top: 10px;
-		    	    -webkit-transition: all 200ms ease 0s;
-		    	    transition: all 200ms ease 0s;
-		    	    -webkit-transform: rotate(90deg);
-		    	    transform: rotate(90deg);
-		    	}
-    	    }
 
 
 	    	&::after {

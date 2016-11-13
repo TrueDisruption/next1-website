@@ -39,7 +39,8 @@ body {
 }
 .header .rightNav a.active {
   background-color: transparent !important;
-  color: #00efc1 !important;
+  text-decoration: underline;
+  color: black;
 }
 .header .rightNav a:hover {
   text-decoration: underline;
@@ -71,42 +72,80 @@ body {
   width: 960px;
   margin: 0 auto;
 }
-.welcome .reports {
+.welcome .reportsList {
   margin-top: 3rem;
 }
-.welcome .reports .reportHolder {
+.welcome .reportsList .reportHolder {
   width: 350px;
   background-color: #ebebeb;
   padding: 10px;
   margin: 0 auto;
 }
-.welcome .reports .reportHolder img {
+.welcome .reportsList .reportHolder img {
   display: block;
   width: 100%;
   max-height: 472px;
 }
-.welcome .reports .reportHolder.iothover {
+.welcome .reportsList .reportHolder.iothover {
   background-color: #62c7f5;
 }
-.welcome .reports .reportHolder.aihover {
+.welcome .reportsList .reportHolder.aihover {
   background-color: #00efc1;
 }
-.welcome .reports .reportHolder.iot:hover {
+.welcome .reportsList .reportHolder.iot:hover {
   background-color: #62c7f5;
 }
-.welcome .reports .reportHolder.ai:hover {
+.welcome .reportsList .reportHolder.ai:hover {
   background-color: #00efc1;
 }
-.welcome .reports p {
+.welcome .reportsList p {
   margin-top: 1rem;
   margin-bottom: 0rem;
   font-weight: 700;
   font-size: 1rem;
 }
-.welcome .reports .price {
+.welcome .reportsList .price {
   font-weight: 800;
   margin-top: 1rem;
   font-size: 14px;
+}
+.reports {
+  padding-top: 5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+.reports h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.reports h2 {
+  font-size: 1.85rem;
+  font-weight: 700;
+}
+.reports .reportItem {
+  margin-top: 3rem;
+}
+.iotReport {
+  width: 395px;
+  background-color: #ebebeb;
+  padding: 10px;
+  margin: 0 auto;
+}
+.iotReport img {
+  display: block;
+  width: 100%;
+}
+.iotReport.iothover {
+  background-color: #62c7f5;
+}
+.iotReport.aihover {
+  background-color: #00efc1;
+}
+.iotReport.iot:hover {
+  background-color: #62c7f5;
+}
+.iotReport.ai:hover {
+  background-color: #00efc1;
 }
 .descriptionBlock {
   margin-top: 3rem;
@@ -147,6 +186,44 @@ body {
 .blueDescriptionBlock .close i {
   color: black;
 }
+.greenDescriptionBlock {
+  margin-top: 3rem;
+  background-color: white;
+  border: 2px solid #00efc1;
+  text-align: center;
+  display: block;
+  position: relative;
+  padding: 3rem;
+}
+.greenDescriptionBlock .blockText {
+  font-size: 32px;
+  font-weight: 400;
+}
+.greenDescriptionBlock .previewReport {
+  display: inline-block;
+  height: 230px;
+  position: absolute;
+  top: -70px;
+  right: 120px;
+}
+.greenDescriptionBlock .close {
+  position: absolute;
+  right: 1px;
+  top: -4px;
+  padding: 0.2rem;
+}
+.greenDescriptionBlock .close i {
+  color: black;
+}
+.box {
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+.box .title {
+  font-size: 24px;
+  font-weight: 900;
+}
 .roundBtn {
   margin-top: 1rem;
   border-radius: 3px;
@@ -184,37 +261,6 @@ body {
 }
 .roundBtn.large {
   padding: 1.0rem 6rem;
-}
-.iotReport {
-  width: 395px;
-  background-color: #ebebeb;
-  padding: 10px;
-  margin: 0 auto;
-}
-.iotReport img {
-  display: block;
-  width: 100%;
-}
-.iotReport.iothover {
-  background-color: #62c7f5;
-}
-.iotReport.aihover {
-  background-color: #00efc1;
-}
-.iotReport.iot:hover {
-  background-color: #62c7f5;
-}
-.iotReport.ai:hover {
-  background-color: #00efc1;
-}
-.box {
-  text-align: left;
-  border: 1px solid #ccc;
-  padding: 1rem;
-}
-.box .title {
-  font-size: 24px;
-  font-weight: 900;
 }
 .whatsInside {
   margin-top: 3rem;
@@ -371,6 +417,7 @@ body {
 }
 .general {
   padding-top: 5rem;
+  padding-bottom: 5rem;
   margin-top: 3rem;
   text-align: left;
 }
@@ -380,6 +427,7 @@ body {
 }
 .contact {
   padding-top: 5rem;
+  padding-bottom: 5rem;
   display: block;
   margin: 0 auto;
   margin-top: 3rem;
@@ -426,6 +474,30 @@ body {
   vertical-align: top;
   resize: vertical;
   resize: none;
+}
+.consulting {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 3rem;
+  text-align: left;
+}
+.consulting .scope {
+  margin-top: 1rem;
+}
+.consulting h1 {
+  margin-bottom: 3rem;
+}
+.consulting h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.consulting p {
+  text-align: justify;
+}
+.consulting .box {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
 }
 .login img {
   width: 120px;

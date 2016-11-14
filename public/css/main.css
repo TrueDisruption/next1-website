@@ -55,7 +55,7 @@ body {
   font-weight: 700;
 }
 .logo img {
-  width: 100px;
+  width: 245px;
 }
 .logo:hover {
   color: black;
@@ -135,6 +135,9 @@ body {
 .reports .casualText {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.reports .box {
+  padding: 2rem;
 }
 .iotReport {
   width: 395px;

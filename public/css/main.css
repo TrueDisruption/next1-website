@@ -203,6 +203,17 @@ body {
 .blueDescriptionBlock .close i {
   color: black;
 }
+.whiteDescriptionBlock {
+  text-align: center;
+  background-color: white;
+  display: block;
+  position: relative;
+  padding: 3rem;
+}
+.whiteDescriptionBlock .blockText {
+  font-size: 32px;
+  font-weight: 400;
+}
 .greenDescriptionBlock {
   margin-top: 3rem;
   background-color: white;
@@ -304,7 +315,7 @@ body {
 .startupMatrix {
   margin-top: 3rem;
   background-color: black;
-  padding-top: 3rem;
+  padding: 3rem;
   padding-bottom: 3rem;
   text-align: center;
 }
@@ -314,13 +325,10 @@ body {
   color: white;
 }
 .startupMatrix p {
-  padding-left: 3rem;
-  padding-right: 3rem;
   color: white;
   margin-top: 3rem;
   margin-bottom: 3rem;
   text-align: justify;
-  font-size: 1.5rem;
 }
 .startupMatrix table {
   background-color: black;
@@ -333,6 +341,7 @@ body {
 .startupMatrix .table-inverse th,
 .startupMatrix .table-inverse thead th {
   border-color: white !important;
+  font-size: 12px;
 }
 .faq {
   margin-top: 3rem;
@@ -430,18 +439,6 @@ body {
 .topics .item h4 {
   margin-top: 1rem;
   font-weight: 700;
-}
-.subscribe {
-  background-color: white;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-top: 3rem;
-  text-align: center;
-}
-.subscribe h3 {
-  font-size: 3.75rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
 }
 .general {
   padding-top: 5rem;
